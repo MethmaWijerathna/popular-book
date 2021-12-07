@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.container{
+  width: 35%;
+  height: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* border: 1px solid black; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .addBook{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    .txtBookTitle{
+      width: 50%;
+      margin-right: 5%;
+    }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .cardBookList{
+    height: 65%;
+    width: 100%;
+    overflow-y: auto;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+    .bookList{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+      .card {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        height: 3.5em;
+        margin-bottom: 1.5%;
+      }
+
+        .cardBody {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+          .cardName{
+            margin-left: 2%;
+            font-size: 125%;
+            vertical-align: middle;
+            width: 67.25%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+
+          .cardBtn{
+            border-radius: 100%;
+            height: 2em;
+            vertical-align: middle;
+            float: right;
+            margin-right: 2%;
+            margin-left: 1%;
+          }
